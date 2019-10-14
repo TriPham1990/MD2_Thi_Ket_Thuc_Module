@@ -7,8 +7,14 @@
 <body>
 <h1>Product List</h1>
 <p>
-    <a th:href="@{/create-product}">Add New Product</a>
+    <a th:href="@{/create-product}">Add New Product</a><br>
+    <a th:href="@{/create-type}">Add New Type Product</a>
 </p>
+<form>
+    Search by type product:
+    <input name="search" type="text"/>
+    <input type="submit" value="Search"/>
+</form><br/>
 <table border="1">
     <tr>
         <th>Name Product</th>

@@ -7,6 +7,9 @@
 <body>
 <form th:action="@{/create-type}" method="post" th:object="${typeProduct}">
     <h1>Create New Type Product</h1>
+    <p>
+        <a th:href="@{/home}">Back To Product List</a>
+    </p>
     <th:block th:if="${message}">
         <p th:text="${message}"></p>
     </th:block>
